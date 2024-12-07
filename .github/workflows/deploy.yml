@@ -33,7 +33,7 @@ jobs:
 
       - name: Build project
         working-directory: ./client
-        run: npm run build
+        run: npm run ${{ github.ref == 'refs/heads/main' && 'build' || 'build:dev' }}
         env:
           VITE_API_ENDPOINT: ${{ secrets.VITE_API_ENDPOINT }}
 
