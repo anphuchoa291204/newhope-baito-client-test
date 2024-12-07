@@ -8,7 +8,7 @@ const __dirname = import.meta.dirname
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [react()],
-	base: "/newhope-baito/",
+	base: "/newhope-baito-client-test/",
 	resolve: {
 		alias: {
 			"@": path.resolve(__dirname, "./src"),
